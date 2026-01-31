@@ -1,6 +1,6 @@
 FROM node:22-bookworm
 
-LABEL maintainer="http://github.com/pamdla"
+LABEL maintainer="https://github.com/pamdla"
 LABEL description="OpenClaw - Your Personal AI Assistant"
 LABEL version="1.0.0"
 
