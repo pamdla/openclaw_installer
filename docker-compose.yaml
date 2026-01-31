@@ -1,0 +1,15 @@
+services:
+  openclaw:
+    tty: true
+    build:
+      context: .
+    image: openclaw:local
+    container_name: openclaw
+    environment:
+      - TZ=Asia/Shanghai
+      - HOST=0.0.0.0
+    ports:
+      - 18789:18789
+    volumes:
+      - ./sources.list:/etc/apt/sources.list
+      - ./conf/openclaw:/root/.openclaw
